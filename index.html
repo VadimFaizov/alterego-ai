@@ -3,138 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Halkfold™ | The Absolute 2027 VR Phone Architecture</title>
+    <title>AlterEgo™ AI | Sovereign Edge Intelligence Core</title>
     <style>
         body {
-            background-color: #080808;
+            background-color: #050505;
             color: #b3b3b3;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', Roboto, sans-serif;
             margin: 0;
-            padding: 40px 20px;
+            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            overflow: hidden;
         }
-        .container {
+        .ai-station {
             width: 100%;
-            max-width: 900px;
-            background: linear-gradient(145deg, #121212, #161616); /* Premium Deep Gradient */
-            padding: 50px;
-            border-radius: 12px;
-            border: 1px solid #1f1f1f;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+            max-width: 600px;
+            text-align: center;
+            background: #0a0a0a;
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid #111;
+            box-shadow: 0 30px 70px rgba(0,0,0,0.9);
         }
         h1 {
             color: #ffffff;
-            font-size: 42px;
-            letter-spacing: 3px;
-            margin: 0 0 10px 0;
+            font-size: 32px;
+            letter-spacing: 4px;
+            margin-bottom: 5px;
             font-weight: 800;
         }
-        h2 {
-            color: #00ff66; /* Neon Green H.A.L.K. Glow */
-            text-shadow: 0 0 15px rgba(0, 255, 102, 0.3);
-            font-size: 20px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            margin: 0 0 30px 0;
-        }
-        h3 {
-            color: #ffffff;
-            font-size: 13px;
-            font-weight: 700;
-            text-transform: uppercase;
+        .subtitle {
+            color: #666;
+            font-size: 14px;
             letter-spacing: 2px;
-            margin-top: 40px;
-            border-left: 2px solid #00ff66; /* Structural Accent Line */
-            padding-left: 10px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
         }
-        p {
-            font-size: 16px;
-            line-height: 1.7;
-        }
-        ul {
-            padding-left: 0;
-            list-style: none;
-        }
-        li {
-            font-size: 16px;
-            line-height: 1.8;
-            margin-bottom: 18px;
-            padding-left: 25px;
+        /* СУПЕР-ПУЛЬСАР ЯДРА H.A.L.K. */
+        .pulse-orb {
+            width: 140px;
+            height: 140px;
+            background: radial-gradient(circle, rgba(0,255,102,0.2) 0%, rgba(0,0,0,0) 70%);
+            border: 2px solid #00ff66;
+            border-radius: 50%;
+            margin: 0 auto 40px auto;
             position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 40px rgba(0,255,102,0.2);
+            animation: orbBreath 2s ease-in-out infinite;
         }
-        li::before {
-            content: "▪";
+        .pulse-orb::after {
+            content: '';
             position: absolute;
-            left: 0;
-            color: #00ff66; /* Hardware Feature Markers */
+            width: 160px;
+            height: 160px;
+            border: 1px dashed rgba(0,255,102,0.3);
+            border-radius: 50%;
+            animation: rotateOuter 12s linear infinite;
         }
-        strong {
-            color: #ffffff;
-            font-weight: 600;
+        .core-dot {
+            width: 12px;
+            height: 12px;
+            background-color: #00ff66;
+            border-radius: 50%;
+            box-shadow: 0 0 20px #00ff66;
         }
-        .highlight {
-            color: #ffffff;
-            font-weight: bold;
+        @keyframes orbBreath {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 30px rgba(0,255,102,0.2); }
+            50% { transform: scale(1.05); box-shadow: 0 0 60px rgba(0,255,102,0.4); border-color: #ffffff; }
         }
-        a {
+        @keyframes rotateOuter {
+            100% { transform: rotate(360deg); }
+        }
+        .status-panel {
+            font-family: monospace;
+            font-size: 12px;
             color: #00ff66;
-            text-decoration: none;
-            font-weight: bold;
-            border-bottom: 1px solid rgba(0, 255, 102, 0.2);
-            transition: all 0.2s;
-        }
-        a:hover {
-            color: #ffffff;
-            border-color: #ffffff;
-        }
-        hr {
-            border: 0;
-            border-top: 1px solid #222222;
-            margin: 35px 0;
-        }
-        .notice {
-            font-size: 13px;
-            color: #666666;
-            line-height: 1.6;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(0,255,102,0.3);
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>PROJECT HALKFOLD™</h1>
-        <h2>The Absolute 2027 VR Phone Architecture.</h2>
-        <p style="font-size: 18px; color: #ffffff;">Next-Generation Asymmetric Folding Smartphone & Ecosystem Framework.</p>
+    <div class="ai-station">
+        <h1>ALTEREGO™ AI</h1>
+        <div class="subtitle">Sovereign Hardware Intelligent Core</div>
         
-        <hr>
-
-        <!-- SOVEREIGN AUTONOMOUS HTML5 PLAYER (DIRECT STREAM FROM THE ROOT) -->
-        <div style="width: 100%; margin: 30px 0; box-shadow: 0 0 40px rgba(0,255,102,0.15); border: 1px solid #1a1a1a; background-color: #000; border-radius: 6px; overflow: hidden;">
-            <video controls autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
-                <source src="halkfold.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+        <div class="pulse-orb">
+            <div class="core-dot"></div>
         </div>
-
-        <hr>
         
-        <ul>
-            <li><strong>Ultra-Thin Split Chassis:</strong> Advanced aerospace carbon fiber foundation compressed to a razor-thin <span class="highlight">6.4 mm</span> profile with local <span class="highlight">10.4 mm</span> camera pods.</li>
-            <li><strong>Binocular Spatial Video:</strong> Dual flagship 1/1.3" Sunny Optical sensors locked on a strict <span class="highlight">100.0 mm optical baseline</span> for distortion-free native VR content generation.</li>
-            <li><strong>OLED-Sandwich Wing:</strong> High-density Silicon-Carbon anode battery embedded between structural substrates for a fluid <span class="highlight">3.92 mm</span> secondary display field.</li>
-            <li><strong>Ecosystem Module Infrastructure:</strong> Snap-on <span class="highlight">40.0 × 40.0 × 40.0 mm</span> modular docking block utilizing a zero-power passive Acoustic Waveguide Tunnel for perfect Spatial 3D Audio preservation.</li>
-        </ul>
-        
-        <hr>
-        
-        <h3>🔒 Intellectual Property Notice</h3>
-        <p class="notice">All physical dimensions, mechanical layout topographies, engineering schematics, asymmetric folding kinematics, and ecosystem interconnect data of Project Halkfold™ are proprietary assets of <strong>Halkfold Ecosystem Global Consortium</strong>. This hardware framework is strictly confidential and globally protected under pending PCT (Patent Cooperation Treaty) application frameworks. Unauthorized replication, reverse engineering, or compliance circumvention will immediately trigger international statutory litigation.</p>
-        
-        <h3>📧 Business Inquiries</h3>
-        <p>For Tier-1 Brand Licensing, Technical Sourcing and DFM Studies: <a href="mailto:info@halkfold.com">info@halkfold.com</a></p>
+        <div class="status-panel">[ H.A.L.K. CORE SECURE CONNECTED - AIR GAP ACTIVE ]</div>
     </div>
+
 </body>
 </html>
